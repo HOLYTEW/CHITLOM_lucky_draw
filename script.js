@@ -25,7 +25,7 @@ document.querySelector('.close-button').addEventListener('click', closeModal);
 async function fetchPrizes() {
    
     let settings = {
-      "url": "https://lucky-draw-backend-final.onrender.com/getAll",
+      "url": "https://chitlom-lucky-draw-backend.onrender.com/getAll",
       "method": "GET",
       "headers": {
         "ngrok-skip-browser-warning": "69420",
@@ -79,7 +79,7 @@ function selectPrize() {
     const selectedPrize = prizes[Math.floor(Math.random() * Math.min(5, prizes.length))];
 
     let settings = {
-        "url": "https://lucky-draw-backend-final.onrender.com/selectedPrize",
+        "url": "https://chitlom-lucky-draw-backend.onrender.com/selectedPrize",
         "method": "POST",
         "timeout": 0,
         "headers": {
